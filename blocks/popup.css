@@ -1,0 +1,148 @@
+.popup {
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  display: none;
+  /* align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  z-index: 1;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.3s ease;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0; */
+}
+
+.popup__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  opacity: 0.7;
+}
+
+.popup__container {
+}
+
+.popup__form {
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  box-shadow: 0 0 25px 0 #00000026;
+  width: 430px;
+  position: relative;
+  border-radius: 10px;
+  align-items: center;
+  justify-content: center;
+}
+
+input:focus-visible {
+  outline: none;
+}
+
+.popup__close-button {
+  background-repeat: no-repeat;
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
+  position: absolute;
+  border: none;
+  background-size: 100%;
+  top: -40px;
+  right: -40px;
+  cursor: pointer;
+}
+
+.popup__close-button:hover {
+  opacity: 60%;
+}
+
+.popup__close-icon {
+}
+
+.popup__title {
+  font-size: 24px;
+  line-height: 29px;
+  color: #000000;
+  margin: 54px;
+}
+
+.popup__name-and-about {
+  font-size: 14px;
+  line-height: 17px;
+  text-align: left;
+  border: 0;
+  border-bottom: 1px solid gray;
+  /* margin: 54px auto 0; */
+  padding-bottom: 13px;
+  width: 358px;
+  height: 27px;
+}
+
+.popup__save-button {
+  font-size: 18px;
+  line-height: 21.78px;
+  text-align: center;
+  width: 358px;
+  height: 50px;
+  background-color: #000000;
+  color: #ffffff;
+  margin: 48px auto 36px;
+  cursor: pointer;
+  border: none;
+  padding: 18px 0;
+}
+
+.popup__save-button:hover {
+  opacity: 80%;
+  border: none;
+}
+
+@media screen and (max-width: 768px) {
+  /**verificar cada item**/
+  .popup__container {
+    width: 282px;
+    height: 322px;
+  }
+
+  .popup__form {
+    width: 282px;
+    height: 322px;
+  }
+
+  .popup__close-button {
+    width: 26px;
+    height: 26px;
+    top: -25px;
+    left: 280px;
+  }
+
+  .popup__title {
+    width: 238px;
+    height: 22px;
+    text-align: left;
+    margin: 25px 0 0 22px;
+  }
+
+  .popup__name {
+    width: 238px;
+  }
+
+  .popup__about {
+    width: 238px;
+  }
+
+  /* .popup__link {
+    width: 238px;
+  } */
+
+  .popup__save-button {
+    width: 238px;
+    height: 46px;
+  }
+}

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Gabriella Almeida" />
+    <meta name="description" content="Sprint 7" />
+    <meta name="keywords" content="HTML, CSS, JavaScript" />
+    <link rel="stylesheet" href="./pages/index.css" />
+    <title>Ao redor dos EUA</title>
+  </head>
+  <body>
+    <div class="page">
+      <header class="header">
+        <img
+          src="./images/Vector.png"
+          alt="Imagem around the U.S."
+          class="header__vector"
+        />
+      </header>
+      <main class="content">
+        <section class="profile">
+          <img
+            src="./images/Imagem de perfil.jpg"
+            alt="Imagem de perfil"
+            class="profile__avatar"
+          />
+          <div class="profile__info">
+            <div class="profile__container-text-and-button">
+              <h1 class="profile__author-name">Jacques Cousteau</h1>
+              <img
+                src="./images/Caneta.png"
+                alt="Imagem de caneta"
+                class="profile__pen-button"
+              />
+            </div>
+            <p class="profile__explore">Explorar</p>
+          </div>
+          <img
+            src="./images/Vector add.svg"
+            alt="botão de adicionar"
+            class="profile__add-button"
+          />
+        </section>
+        <section class="popup" id="popup__edit-profile"> <!--ta correto?-->
+          <div class="popup__overlay"></div>
+          <div class="popup__container">
+            <form class="popup__form">
+              <button type="button" class="popup__close-button">
+                <img
+                src="./images/Close Icon.svg"
+                alt="Botão de fechar"
+                class="popup__close-icon">
+              </button>
+              <h2 class="popup__title">Editar perfil</h2>
+              <input
+                type="text"
+                class="popup__name-and-about"
+                placeholder="Nome"
+                id="name"
+                required
+              />
+              <input
+                type="text"
+                class="popup__name-and-about"
+                placeholder="Sobre mim"
+                id="about"
+                required
+              />
+              <button class="popup__save-button">Salvar</button>
+              <button
+              type="button"
+              class="popup__save-button"
+              id="popup__create-button"
+            > <!--verificar se está correto-->
+            </form>
+          </div>
+        </section>
+
+        <section class="elements">
+          <div class="elements__rectangle">
+            <img
+              src="./images/Yosomite.png"
+              alt="Imagem do Vale de Yosemite"
+              class="elements__photo-grid"
+            />
+            <div class="elements__container-title-and-button">
+              <h2 class="elements__place-name">Vale de Yosomite</h2>
+              <img src="./images/Coração.png" alt="Botão de coração" />
+              <!--se mexer na imagem, precisará de uma nova classe-->
+            </div>
+          </div>
+          <div class="elements__rectangle">
+            <img
+              src="./images/Louise.png"
+              alt="Imagem do Lago Louise"
+              class="elements__photo-grid"
+            />
+            <div class="elements__container-title-and-button">
+              <h2 class="elements__place-name">Lago Louise</h2>
+              <img src="./images/Coração.png" alt="Botão de coração" />
+            </div>
+          </div>
+          <div class="elements__rectangle">
+            <img
+              src="./images/Montanhas.png"
+              alt="Montanhas Care..."
+              class="elements__photo-grid"
+            />
+            <div class="elements__container-title-and-button">
+              <h2 class="elements__place-name">Montanhas Care...</h2>
+              <img src="./images/Coração.png" alt="Botão de coração" />
+            </div>
+          </div>
+          <div class="elements__rectangle">
+            <img
+              src="./images/Latemar.png"
+              alt="Imagem de Latemar"
+              class="elements__photo-grid"
+            />
+            <div class="elements__container-title-and-button">
+              <h2 class="elements__place-name">Latemar</h2>
+              <img src="./images/Coração.png" alt="Botão de coração" />
+            </div>
+          </div>
+          <div class="elements__rectangle">
+            <img
+              src="./images/Vanoise.png"
+              alt="Imagem de Vanoise"
+              class="elements__photo-grid"
+            />
+            <div class="elements__container-title-and-button">
+              <h2 class="elements__place-name">Parque Nacional Vanoise</h2>
+              <img src="./images/Coração.png" alt="Botão de coração" />
+            </div>
+          </div>
+          <div class="elements__rectangle">
+            <img
+              src="./images/Lago.png"
+              alt="Imagem do Lago di Braies"
+              class="elements__photo-grid"
+            />
+            <div class="elements__container-title-and-button">
+              <h2 class="elements__place-name">Lago di Braies</h2>
+              <img src="./images/Coração.png" alt="Botão de coração" />
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer class="footer">
+        <p class="footer__copyright">&copy 2021 Around The U.S.</p>
+      </footer>
+    </div>
+  </body>
+</html>
