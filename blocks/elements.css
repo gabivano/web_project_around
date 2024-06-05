@@ -13,6 +13,11 @@
   flex-direction: column;
 }
 
+.elements__rectangle:hover {
+  cursor: pointer;
+  opacity: 0.7;
+}
+
 .elements__photo-grid {
   max-width: 282px;
   max-height: 282px;
@@ -37,6 +42,13 @@
   overflow: hidden;
 }
 
+.element__icon {
+}
+
+.element__dark-icon {
+  display: none;
+}
+
 @media screen and (max-width: 1024px) {
   .elements {
     max-width: 585px;
@@ -57,14 +69,5 @@
 
   .elements__rectangle {
     max-width: 282px;
-  }
-
-  .elements__photo-grid {
-  }
-
-  .elements__container-title-and-button {
-  }
-
-  .elements__place-name {
   }
 }

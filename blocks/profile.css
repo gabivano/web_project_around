@@ -33,6 +33,12 @@
 .profile__pen-button {
   border: solid #ffffff 1px;
   padding: 7px;
+  cursor: pointer;
+}
+
+.profile__pen-button:hover {
+  filter: brightness(0) invert(1);
+  opacity: 0.5;
 }
 
 .profile__explore {
@@ -44,12 +50,16 @@
 }
 
 .profile__add-button {
-  border: solid #ffffff 1px;
+  border: 1px solid #ffffff;
   padding: 14px 64px;
   max-height: 50px;
   max-width: 150px;
   box-sizing: border-box;
-  margin-left: auto;
+  margin-left: auto; /**o mais não muda cor**/
+}
+
+.profile__add-button:hover {
+  border: 2px solid #ffffff60;
 }
 
 @media screen and (max-width: 720px) {
