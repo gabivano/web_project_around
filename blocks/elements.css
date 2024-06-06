@@ -42,10 +42,10 @@
   overflow: hidden;
 }
 
-.element__icon {
+.elements__icon:active {
 }
 
-.element__dark-icon {
+.elements__dark-icon {
   display: none;
 }
 
