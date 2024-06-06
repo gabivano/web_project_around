@@ -79,7 +79,7 @@
   text-align: left;
   border: 0;
   border-bottom: 1px solid #000000;
-  border: none;
+  padding: 0 0 13px;
   width: 100%;
 }
 
@@ -101,8 +101,7 @@
   border: none;
 }
 
-@media screen and (max-width: 768px) {
-  /**verificar cada item**/
+@media screen and (max-width: 720px) {
   .popup__container {
     width: 282px;
     height: 322px;
@@ -111,13 +110,14 @@
   .popup__form {
     width: 282px;
     height: 322px;
+    align-items: center;
   }
 
   .popup__close-button {
     width: 26px;
     height: 26px;
-    top: -25px;
-    left: 280px;
+    top: -40px;
+    right: -30px;
   }
 
   .popup__title {
