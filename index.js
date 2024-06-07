@@ -21,16 +21,16 @@ function handleProfileFormSubmit(evt) {
   let nameInput = document.querySelector("#name").value;
   let aboutInput = document.querySelector("#about").value;
 
-  let userName = document.querySelector(".profile__name");
-  let userAbout = document.querySelector(".profile__about");
+  let userName = document.querySelector(".profile__author-name");
+  let userAbout = document.querySelector(".profile__explore");
 
 
-  userName.textContent = nameInput.value;
-  userAbout.textContent = aboutInput.value;
+  userName.textContent = nameInput;
+  userAbout.textContent = aboutInput;
 
   closePopUp();
 }
 
 editButton.addEventListener("click", openPopUp);
 closeButton.addEventListener("click", closePopUp);
-formElement.addEventListener("click", handleProfileFormSubmit);
+formElement.addEventListener("submit", handleProfileFormSubmit);
