@@ -83,6 +83,9 @@
     text-align: center;
     padding-top: 16px;
     padding-bottom: 0;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
   }
 
   .profile__pen-button {
@@ -96,6 +99,9 @@
     text-align: center;
     padding-bottom: 16px;
     margin-top: 14px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
   }
 
   .profile__add-button {

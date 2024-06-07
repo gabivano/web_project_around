@@ -21,6 +21,7 @@
 .elements__photo-grid {
   max-width: 282px;
   max-height: 282px;
+
 }
 
 .elements__container-title-and-button {
@@ -30,6 +31,8 @@
   align-items: center;
   padding-left: 21px;
   padding-right: 15px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
 
 .elements__place-name {
