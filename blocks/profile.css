@@ -15,6 +15,12 @@
 }
 
 .profile__info {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 415px;
+  display: inline-block;
+
 }
 
 .profile__container-text-and-button {
@@ -55,7 +61,7 @@
   max-height: 50px;
   max-width: 150px;
   box-sizing: border-box;
-  margin-left: auto; /**o mais não muda cor**/
+  margin-left: auto;
 }
 
 .profile__add-button:hover {
