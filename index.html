@@ -42,168 +42,131 @@
             class="profile__add-button"
          >
         </section>
-        <section class="popup">
-          <div class="popup__overlay"></div>
-          <div class="popup__container">
-            <form class="popup__form">
-              <fieldset class="popup__container-fieldset">
-                <button type="button" class="popup__close-button">
-                  <img
-                    src="./images/Close-icon.svg"
-                    alt="Botão de fechar"
-                    class="popup__close-icon"
-                 >
-                </button>
-                <h2 class="popup__title">Editar perfil</h2>
-                <input
-                  type="text"
-                  class="popup__input"
-                  placeholder="Nome"
-                  id="name"
-                  maxlength="120"
-                  required
-               >
-                <input
-                  type="text"
-                  class="popup__input"
-                  placeholder="Sobre mim"
-                  id="about"
-                  maxlength="120"
-                  required
-               >
-              </fieldset>
-              <button class="popup__save-button" type="submit">Salvar</button>
-            </form>
-          </div>
-        </section>
+
 
         <section class="elements">
           <div class="elements__rectangle">
-            <img
-              src="./images/Yosomite.png"
-              alt="Imagem do Vale de Yosemite"
-              class="elements__photo-grid"
-           >
-            <div class="elements__container-title-and-button">
-              <h2 class="elements__place-name">Vale de Yosomite</h2>
-              <img
-                src="./images/Coração.png"
-                alt="Botão de coração"
-                class="elements__icon"
-             >
-              <img
-                src="./images/coracao-dark.png"
-                alt="Coração preto"
-                class="elements__dark-icon"
-             >
-            </div>
-          </div>
-          <div class="elements__rectangle">
-            <img
-              src="./images/Louise.png"
-              alt="Imagem do Lago Louise"
-              class="elements__photo-grid"
-           >
-            <div class="elements__container-title-and-button">
-              <h2 class="elements__place-name">Lago Louise</h2>
-              <img
-                src="./images/Coração.png"
-                alt="Botão de coração"
-                class="elements__icon"
-             >
-              <img
-                src="./images/coracao-dark.png"
-                alt="Coração preto"
-                class="elements__dark-icon"
-             >
-            </div>
-          </div>
-          <div class="elements__rectangle">
-            <img
-              src="./images/Montanhas.png"
-              alt="Montanhas Care..."
-              class="elements__photo-grid"
-           >
-            <div class="elements__container-title-and-button">
-              <h2 class="elements__place-name">Montanhas Care...</h2>
-              <img
-                src="./images/Coração.png"
-                alt="Botão de coração"
-                class="elements__icon"
-             >
-              <img
-                src="./images/coracao-dark.png"
-                alt="Coração preto"
-                class="elements__dark-icon"
-             >
-            </div>
-          </div>
-          <div class="elements__rectangle">
-            <img
-              src="./images/Latemar.png"
-              alt="Imagem de Latemar"
-              class="elements__photo-grid"
-           >
-            <div class="elements__container-title-and-button">
-              <h2 class="elements__place-name">Latemar</h2>
-              <img
-                src="./images/Coração.png"
-                alt="Botão de coração"
-                class="elements__icon"
-             >
-              <img
-                src="./images/coracao-dark.png"
-                alt="Coração preto"
-                class="elements__dark-icon"
-             >
-            </div>
-          </div>
-          <div class="elements__rectangle">
-            <img
-              src="./images/Vanoise.png"
-              alt="Imagem de Vanoise"
-              class="elements__photo-grid"
-           >
-            <div class="elements__container-title-and-button">
-              <h2 class="elements__place-name">Parque Nacional Vanoise</h2>
-              <img
-                src="./images/Coração.png"
-                alt="Botão de coração"
-                class="elements__icon"
-             >
-              <img
-                src="./images/coracao-dark.png"
-                alt="Coração preto"
-                class="elements__dark-icon"
-             >
-            </div>
-          </div>
-          <div class="elements__rectangle">
-            <img
-              src="./images/Lago.png"
-              alt="Imagem do Lago di Braies"
-              class="elements__photo-grid"
-           >
-            <div class="elements__container-title-and-button">
-              <h2 class="elements__place-name">Lago di Braies</h2>
-              <img
-                src="./images/Coração.png"
-                alt="Botão de coração"
-                class="elements__icon"
-             >
-              <img
-                src="./images/coracao-dark.png"
-                alt="Coração preto"
-                class="elements__dark-icon"
-             >
-            </div>
+            <template class="elements__template">
+              <div class="elements__card">
+                <button class="elements__image-button">
+                  <img class="elements__image" src=" " alt="Imagem" />
+                </button>
+                <button
+                  class="elements__button elements__button_type_trash"
+                  type="button"
+                >
+                  <img
+                    class="elements__icon elements__icon_type_trash-can"
+                    src="./images/Trash.svg"
+                    alt="Botão de lixeira"
+                  />
+                </button>
+                <div class="elements__title">
+                  <h3 class="elements__text"></h3>
+                  <button
+                    class="elements__button elements__button_type_like"
+                    type="button"
+                  >
+                    <img
+                      class="elements__icon elements__icon_type_like-icon"
+                      src="./images/Coração.png"
+                      alt="Botão de curtir"
+                    />
+                  </button>
+                </div>
+                <div class="elements__window">
+                  <div class="elements__container">
+                    <button
+                      class="elements__button elements__button_type_close"
+                      type="button"
+                      id="window-close-button"
+                    >
+                      <img
+                        class="elements__icon elements__icon_type_close"
+                        src="./images/Close-icon.svg"
+                        alt="Botão de fechar"
+                      />
+                    </button>
+                    <img class="elements__window-image" src=" " alt="Imagem" />
+                    <h3 class="elements__window-name"></h3>
+                  </div>
+                </div>
+              </div>
+            </template>
           </div>
         </section>
       </main>
       <footer class="footer">
         <p class="footer__copyright">&copy; 2021 Around The U.S.</p>
       </footer>
-      <script src="./index.js"></script>
+      <section class="popup">
+        <div class="popup__container">
+          <form class="popup__form">
+            <fieldset class="popup__container-fieldset">
+              <button type="button" class="popup__close-button">
+                <img
+                  src="./images/Close-icon.svg"
+                  alt="Botão de fechar"
+                  class="popup__close-icon"
+               >
+              </button>
+              <h2 class="popup__title">Editar perfil</h2>
+              <input
+                type="text"
+                class="popup__input"
+                placeholder="Nome"
+                id="name"
+                maxlength="120"
+                required
+             >
+              <input
+                type="text"
+                class="popup__input"
+                placeholder="Sobre mim"
+                id="about"
+                maxlength="120"
+                required
+             >
+            </fieldset>
+            <button class="popup__save-button" type="submit">Salvar</button>
+          </form>
+        </div>
+      </section>
+
+      <section class="popup-add-card popup">
+        <div class="popup-add-card__container popup__container">
+          <form class="popup-add-card__form popup__form">
+            <fieldset class="popup-add-card__container-fieldset popup__container-fieldset">
+              <button type="button" class="popup-add-card__close-button popup__close-button">
+                <img
+                  src="./images/Close-icon.svg"
+                  alt="Botão de fechar"
+                  class="popup-add-card__close-icon popup__close-icon"
+               >
+              </button>
+              <h2 class="popup-add-card__title popup__title">Novo local</h2>
+              <input
+                type="text"
+                class="popup-add-card__input popup__input"
+                placeholder="Título"
+                id="title"
+                maxlength="120"
+                required
+             >
+              <input
+                type="url"
+                class="popup-add-card__input popup__input"
+                placeholder="Link de imagem"
+                id="link-input"
+                maxlength="120"
+                required
+             >
+            </fieldset>
+            <button class="popup-add-card__create-button popup__save-button" type="submit">Criar</button>
+          </form>
+        </div>
+      </section>
+      <script src="./scripts/index.js"></script>
     </div>
   </body>
 </html>
