@@ -1,7 +1,4 @@
 .elements {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   max-width: 880px;
   margin: 0 auto;
   display: grid;
