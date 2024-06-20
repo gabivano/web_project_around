@@ -123,7 +123,7 @@ function createCard(name, link) {
   });
 
   cardLikeButton.addEventListener("click", function () {
-    cardLikeButton.classList.add("elements__button_type_like-active");
+    cardLikeButton.classList.toggle("elements__button_type_like-active");
   });
 
   buttonCardImage.addEventListener("click", function () {
