@@ -125,6 +125,7 @@
   color: #ffffff;
   font-size: 12px;
   line-height: 1.21;
+  top: 27px;
 }
 
 .elements__window-image {
@@ -182,5 +183,11 @@
 
   .elements__card {
     margin-top: 21px;
+  }
+
+  .elements__button_type_close {
+    right: -10px;
+    height: 26px;
+    width: 26px;
   }
 }

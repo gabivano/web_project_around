@@ -141,3 +141,16 @@ initialCards.forEach(function (element) {
   const firstcards = createCard(element.name, element.link);
   cardArea.append(firstcards);
 });
+
+const formAddCard = document.querySelector(".popup-add-card__form");
+const titleInput = document.querySelector("#title");
+const linkInput = document.querySelector("#link-input");
+
+formAddCard.addEventListener("submit", function () {
+  const title = titleInput.value;
+  const link = linkInput.value;
+  const createdCard = createCard(title, link);
+  cardArea.prepend(createdCard);
+  formAddCard.reset();
+  closeCardPopUp();
+});
