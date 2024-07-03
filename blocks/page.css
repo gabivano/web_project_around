@@ -1,16 +1,4 @@
 .page {
   background-color: #000000;
-  font-family: "Inter", sans-serif;
-}
-
-@media screen and (max-width: 1024px) {
-  .page {
-    min-width: 768px;
-  }
-}
-
-@media screen and (max-width: 720px) {
-  .page {
-    min-width: 320px;
-  }
+  font-family: "Inter";
 }

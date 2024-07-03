@@ -1,19 +1,18 @@
 .header {
-  max-width: 880px;
-  max-height: 74px;
-  width: 100%;
-  margin: 0 auto 40px;
-  border-bottom: solid white 1px;
-  padding-bottom: 41px;
-  padding-top: 45px;
+  max-width: 882px;
+  padding: 45px 0 40px;
+  margin: 0 auto;
+  border-bottom: 1px solid #545454;
 }
 
-.header__vector {
-}
-
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 900px) {
   .header {
-    width: 320px;
-    height: 56px;
+    margin-left: 15px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .header {
+    margin-left: 27px;
   }
 }
