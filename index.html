@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="fotos e perfil" />
+    <meta name="description" content="Fotos e perfil" />
     <meta name="author" content="Gabriella Almeida" />
     <meta name="keywords" content="fotos, lugares, paisagens" />
     <link rel="stylesheet" href="./pages/index.css" />
@@ -12,7 +12,7 @@
   <body>
     <div class="page">
       <header class="header">
-        <img src="./images/headerlogo.svg" alt="Logo" class="header__logo" />
+        <img src="images/headerlogo.svg" alt="Logo" class="header__logo" />
       </header>
       <main class="content">
         <section class="profile">
@@ -30,7 +30,7 @@
                 class="profile__edit-button"
               />
             </div>
-            <p class="profile__profession">Explorar</p>
+            <p class="profile__profession">Explorador</p>
           </div>
           <img
             src="./images/addbuttonprofile.png"
@@ -38,7 +38,6 @@
             class="profile__add-button"
           />
         </section>
-
         <section class="elements"></section>
         <template class="template-card">
           <article class="elements__card">
@@ -76,9 +75,7 @@
               placeholder="Jacques Cousteau"
               required
             />
-            <span class="popup__error-visible input-name-error">
-
-            </span>
+            <span class="popup__error-visible input-name-error"> </span>
 
             <input
               type="text"
@@ -89,15 +86,14 @@
               placeholder="Explorador"
               required
             />
-            <span class="popup__error-visible input-description-error">
-
-            </span>
+            <span class="popup__error-visible input-description-error"> </span>
 
             <button type="submit" class="popup__button-create popup__button">
               Guardar
             </button>
           </form>
         </div>
+
         <div class="popup" id="popup-card">
           <div class="popup__overlay"></div>
           <form class="popup__card-form popup__form">
@@ -134,10 +130,11 @@
               type="submit"
               class="popup__card-button-create popup__button"
             >
-             Salvar
+              Guardar
             </button>
           </form>
         </div>
+
         <div class="popup" id="popup-image">
           <div class="popup__overlay"></div>
           <div class="popup__image-content">
@@ -151,11 +148,15 @@
           </div>
         </div>
       </main>
+
       <footer class="footer">
         <p class="footer__copyright">&copy 2024 Around The U.S.</p>
       </footer>
     </div>
-    <script src="./scripts/script.js"></script>
-    <script src="./scripts/validate.js"></script>
+    <script type="module" src="scripts/index.js"></script>
+    <script type="module" src="scripts/Card.js"></script>
+    <script type="module" src="scripts/FormValidator.js"></script>
+    <script type="module" src="scripts/utils.js"></script>
+    <script type="module" src="scripts/validate.js"></script>
   </body>
 </html>

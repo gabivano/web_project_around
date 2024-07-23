@@ -1,2 +1,14 @@
-Projeto que pertence ao Sprint 7 do Bootcamp da TripleTen. Tem por objetivo criar uma página interativa e responsiva em que os usuários possam adicionar, remover ou curtir fotos.
-Os métodos utilizados para a construção da página serão através do HTML, CSS e JavaScript para consolidação do aprendizado teórico até o momento.
+Projeto referente ao Sprint 10 do Bootcamp da TripleTen. Tem por objetivo refatorar o código, utilizando JavaScript Modular para consolidação do aprendizado teórico até o momento.
+
+Os recursos do projeto são:
+
+- HTML;
+- CSS;
+- JavaScript Modular;
+- Figma:
+- DOM;
+- Git e GitHub
+
+O link de acesso ao projeto é:
+
+https://github.com/gabivano/web_project_around
