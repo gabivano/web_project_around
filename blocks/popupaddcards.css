@@ -9,8 +9,7 @@
   width: 430px;
   background-color: #ffffff;
   border-radius: 10px;
-  top: 23%;
-  left: 33%;
+  top: 195px;
 }
 
 .popup__card-button-closed {
@@ -91,19 +90,19 @@
 
 .popup__open {
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 @media screen and (max-width: 880px) {
   .popup__card-form {
     top: 18%;
-    left: 27%;
   }
 }
 
 @media screen and (max-width: 660px) {
   .popup__card-form {
     top: 19%;
-    left: 20%;
   }
 
   .popup__card_button-closed {
@@ -116,7 +115,6 @@
   .popup__card-form {
     max-width: 282px;
     top: 20%;
-    left: 22%;
   }
 
   .popup__card-title {
@@ -131,7 +129,6 @@
 @media screen and (max-width: 430px) {
   .popup__card-form {
     top: 20%;
-    left: 6%;
   }
 
   .popup__card_button-closed {
