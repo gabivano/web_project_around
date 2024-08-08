@@ -1,4 +1,4 @@
-Projeto referente ao Sprint 10 do Bootcamp da TripleTen. Tem por objetivo refatorar o código, utilizando JavaScript Modular para consolidação do aprendizado teórico até o momento.
+Projeto referente ao Sprint 11 do Bootcamp da TripleTen. Tem por objetivo refatorar o código, utilizando JavaScript Modular para consolidação do aprendizado teórico até o momento. Além disso, é utilizado Webpack.
 
 Os recursos do projeto são:
 
@@ -7,7 +7,8 @@ Os recursos do projeto são:
 - JavaScript Modular;
 - Figma:
 - DOM;
-- Git e GitHub
+- Git e GitHub;
+- Webpack
 
 O link de acesso ao projeto é:
 
