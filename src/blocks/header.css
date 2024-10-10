@@ -1,19 +1,33 @@
 .header {
-  width: 880px;
-  margin-top: 45px;
-  left: 200px;
-  color: #ffffff;
+  max-width: 880px;
+  margin: 0 auto 40px;
+  padding: 45px 0 0;
+  border-bottom: 1px solid #545454;
 }
-@media (max-width: 720px) {
+
+.header__logo {
+  width: 173px;
+  height: 33px;
+  margin-bottom: 31px;
+}
+
+.header__line {
+  padding-top: 0;
+}
+
+@media screen and (max-width: 768px) {
   .header {
-    width: 100%;
-    margin-top: 28px;
+    padding-top: 28px;
+    margin-left: 0;
   }
+
   .header__logo {
-    width: 126px;
-    margin-left: 27px;
+    width: 100vw;
+    height: 24px;
+    margin-bottom: 32px;
   }
+
   .header__line {
-    width: 100%;
+    width: 100vw;
   }
 }
