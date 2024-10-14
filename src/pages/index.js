@@ -28,6 +28,7 @@ api.getUserInfo().then((result) => {
   userInfo.setUserInfo(result);
 
   api.getInitialCards().then((result) => {
+    console.log(result);
     const cardList = new Section(
       {
         items: result,
