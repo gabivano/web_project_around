@@ -34,8 +34,8 @@
 
 .popup__image {
   position: relative;
-  max-width: 75vw;
-  max-height: 75vh;
+  max-width: 500px;
+  max-height: 500px;
 }
 
 .popup__form {

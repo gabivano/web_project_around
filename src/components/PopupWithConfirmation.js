@@ -10,12 +10,9 @@ export default class PopupWithConfirmation extends Popup {
 
   setEventListeners() {
     super.setEventListeners();
-    console.log(this._formElement.querySelector(".popup__button"));
-    console.log("sabado");
     this._formElement
       .querySelector(".popup__button")
       .addEventListener("click", (evt) => {
-        console.log("testando");
         evt.preventDefault();
         this._handleConfirmation(this.cardId);
         super.close();

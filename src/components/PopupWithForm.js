@@ -31,7 +31,7 @@ export default class PopupWithForm extends Popup {
   }
 
   toggleTextButton() {
-    const textButton = this._popupSelector.querySelector(".popup__button");
+    const textButton = this._form.querySelector(".popup__button");
     let texttoggle = "";
     if (textButton.textContent.trim() === "Salvar") {
       texttoggle = "Salvando...";
@@ -49,6 +49,7 @@ export default class PopupWithForm extends Popup {
     super.setEventListeners();
     this._form.addEventListener("submit", (evt) => {
       evt.preventDefault();
+      this.toggleTextButton();
       this._handleFormSubmit(this._getInputValues());
       this.close();
     });
