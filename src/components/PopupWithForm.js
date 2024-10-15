@@ -30,7 +30,7 @@ export default class PopupWithForm extends Popup {
     return this._formValues;
   }
 
-  toggleTextButton() {
+  _toggleTextButton() {
     const textButton = this._form.querySelector(".popup__button");
     let texttoggle = "";
     if (textButton.textContent.trim() === "Salvar") {
@@ -45,17 +45,24 @@ export default class PopupWithForm extends Popup {
     textButton.textContent = texttoggle;
   }
 
+  _loading(isLoading) {
+    if (isLoading) {
+      this._toggleTextButton();
+    }
+  }
+
   setEventListeners() {
     super.setEventListeners();
     this._form.addEventListener("submit", (evt) => {
       evt.preventDefault();
-      this.toggleTextButton();
+      this._loading(true);
       this._handleFormSubmit(this._getInputValues());
       this.close();
     });
   }
 
   close() {
+    this._toggleTextButton();
     super.close();
     this._form.reset();
   }
