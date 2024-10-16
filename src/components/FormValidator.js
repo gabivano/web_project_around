@@ -12,18 +12,15 @@ export default class FormValidator {
   }
 
   _showInputError(inputElement, errorMessage) {
-    console.log("Showing input error", inputElement, errorMessage);
     const errorElement = this._formElement.querySelector(
       `#${inputElement.id}-error`
     );
-    console.log(inputElement.id);
     inputElement.classList.add(this._settings.inputErrorClass);
     errorElement.textContent = errorMessage;
     errorElement.classList.add(this._settings.errorClass);
   }
 
   _hideInputError(inputElement) {
-    console.log("Hiding input error", inputElement);
     const errorElement = this._formElement.querySelector(
       `#${inputElement.id}-error`
     );
@@ -65,11 +62,9 @@ export default class FormValidator {
     if (this._hasInvalidInput()) {
       this._buttonElement.classList.add(this._settings.inactiveButtonClass);
       this._buttonElement.disabled = true;
-      console.log("Button disabled");
     } else {
       this._buttonElement.classList.remove(this._settings.inactiveButtonClass);
       this._buttonElement.disabled = false;
-      console.log("Button enabled");
     }
   }
 

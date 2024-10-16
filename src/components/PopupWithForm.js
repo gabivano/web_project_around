@@ -5,6 +5,7 @@ export default class PopupWithForm extends Popup {
     super(popupSelector);
     this._handleFormSubmit = handleFormSubmit;
     this._form = this._popup.querySelector(".popup__form");
+    this._textButton = this._form.querySelector(".popup__button");
   }
 
   getUserInfo() {
@@ -30,19 +31,32 @@ export default class PopupWithForm extends Popup {
     return this._formValues;
   }
 
-  _toggleTextButton() {
-    const textButton = this._form.querySelector(".popup__button");
-    let texttoggle = "";
-    if (textButton.textContent.trim() === "Salvar") {
-      texttoggle = "Salvando...";
-    } else if (textButton.textContent.trim() === "Criar") {
-      texttoggle = "Criando...";
-    } else if (textButton.textContent.trim() === "Salvando...") {
-      texttoggle = "Salvar";
-    } else if (textButton.textContent.trim() === "Criando...") {
-      texttoggle = "Criar";
+  open() {
+    if (this._textButton.textContent.trim() === "Salvando...") {
+      this._textButton.textContent = "Salvar";
     }
-    textButton.textContent = texttoggle;
+    if (this._textButton.textContent.trim() === "Criando...") {
+      this._textButton.textContent = "Criar";
+    }
+    super.open();
+  }
+
+  _toggleTextButton() {
+    let texttoggle = "";
+    if (this._textButton.textContent.trim() === "Salvar") {
+      texttoggle = "Salvando...";
+      console.log(texttoggle);
+    } else if (this._textButton.textContent.trim() === "Criar") {
+      texttoggle = "Criando...";
+      console.log(texttoggle);
+    } else if (this._textButton.textContent.trim() === "Salvando...") {
+      texttoggle = "Salvar";
+      console.log(texttoggle);
+    } else if (this._textButton.textContent.trim() === "Criando...") {
+      texttoggle = "Criar";
+      console.log(texttoggle);
+    }
+    this._textButton.textContent = texttoggle;
   }
 
   _loading(isLoading) {
@@ -62,7 +76,6 @@ export default class PopupWithForm extends Popup {
   }
 
   close() {
-    this._toggleTextButton();
     super.close();
     this._form.reset();
   }
