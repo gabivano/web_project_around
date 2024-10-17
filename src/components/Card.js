@@ -82,9 +82,7 @@ export default class Card {
       }
     });
     this._dltBtn.addEventListener("click", () => {
-      console.log("teste");
       this._handleDeleteCard(this._cardId);
-      //this._handleDelete();
     });
     this._imgBtn.addEventListener("click", () => {
       this._handleClickCard(this._link, this._name);

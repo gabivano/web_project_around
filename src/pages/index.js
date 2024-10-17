@@ -28,12 +28,10 @@ api.getUserInfo().then((result) => {
   userInfo.setUserInfo(result);
 
   api.getInitialCards().then((result) => {
-    console.log(result);
     const cardList = new Section(
       {
         items: result,
         renderer: (item) => {
-          console.log(item);
           const cards = new Card(
             item,
             () => {
@@ -60,7 +58,6 @@ api.getUserInfo().then((result) => {
 // Adciona cards. Quando o usuário adiciona um novo cartão, o PopupWithForm coleta os dados do formulário, envia uma requisição à API
 //com as informações do novo cartão e, se bem-sucedido, renderiza o novo cartão na interface.
 const popupAddCard = new PopupWithForm("#addPostPopup", (input) => {
-  console.log(input);
   if (input.link) {
     api.addcards(input).then((result) => {
       const newCard = new Card(

@@ -21,7 +21,6 @@ export default class Popup {
   }
 
   setEventListeners() {
-    console.log(this._popup);
     if (this._popup.querySelector(".popup__close-button")) {
       this._popup
         .querySelector(".popup__close-button")

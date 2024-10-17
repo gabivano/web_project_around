@@ -8,7 +8,6 @@ export default class FormValidator {
     this._buttonElement = this._formElement.querySelector(
       this._settings.submitButtonSelector
     );
-    console.log("FormValidator initialized", this._settings, this._formElement);
   }
 
   _showInputError(inputElement, errorMessage) {

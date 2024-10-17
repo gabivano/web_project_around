@@ -42,21 +42,15 @@ export default class PopupWithForm extends Popup {
   }
 
   _toggleTextButton() {
-    let texttoggle = "";
     if (this._textButton.textContent.trim() === "Salvar") {
-      texttoggle = "Salvando...";
-      console.log(texttoggle);
+      this._textButton.textContent = "Salvando...";
     } else if (this._textButton.textContent.trim() === "Criar") {
-      texttoggle = "Criando...";
-      console.log(texttoggle);
+      this._textButton.textContent = "Criando...";
     } else if (this._textButton.textContent.trim() === "Salvando...") {
-      texttoggle = "Salvar";
-      console.log(texttoggle);
+      this._textButton.textContent = "Salvar";
     } else if (this._textButton.textContent.trim() === "Criando...") {
-      texttoggle = "Criar";
-      console.log(texttoggle);
+      this._textButton.textContent = "Criar";
     }
-    this._textButton.textContent = texttoggle;
   }
 
   _loading(isLoading) {
